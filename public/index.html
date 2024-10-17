@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Event Aggregation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Event Aggregation Tool</h1>
+        <div class="form-container">
+            <h2>Track Event</h2>
+            <form id="eventForm">
+                <input type="text" id="userId" placeholder="User ID" required>
+                <input type="text" id="eventType" placeholder="Event Type" required>
+                <textarea id="properties" placeholder="Properties (JSON)"></textarea>
+                <button type="submit">Track Event</button>
+            </form>
+        </div>
+        <div class="data-container">
+            <h2>Event Aggregation</h2>
+            <div id="aggregationData"></div>
+        </div>
+        <div class="data-container">
+            <h2>Recent Events</h2>
+            <div id="recentEvents"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
